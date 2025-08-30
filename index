@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Puzzle Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Intro Screen -->
+  <div id="intro-screen">
+    <h1>🧩 Puzzle Adventure</h1>
+    <p>"La vida es como un rompecabezas, cada pieza importa."</p>
+    <button onclick="showLevels()">Start Game</button>
+  </div>
+
+  <!-- Level Select -->
+  <div id="level-select" style="display:none;">
+    <h2>Select a Level</h2>
+    <div id="levels"></div>
+  </div>
+
+  <!-- Puzzle Area -->
+  <div id="puzzle-area" style="display:none;">
+    <h2 id="level-title"></h2>
+    <div id="puzzle"></div>
+    <button onclick="backToLevels()">Back to Levels</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
